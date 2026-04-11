@@ -1,5 +1,5 @@
-import Header from "@/_components/Header/Header";
-import Hero from "@/_components/Hero/Hero";
+import Header from "@/app/_components/Header/Header";
+import Hero from "@/app/_components/Hero/Hero";
 import Image from "next/image";
 
 export default function Home() {
