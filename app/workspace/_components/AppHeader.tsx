@@ -6,7 +6,7 @@ import "./AppHeader.css";
 
 export function AppHeader() {
   return (
-    <header className="sf-header-bar">
+    <header className="sf-header-bar flex items-center justify-between w-full">
       <div className="sf-header-left">
         <SidebarTrigger className="sf-sidebar-trigger" />
       </div>

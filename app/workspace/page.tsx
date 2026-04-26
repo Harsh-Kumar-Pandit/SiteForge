@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../_components/Hero/Hero'
 
 const page = () => {
   return (
-    <div>
-      
+    <div className="-mt-12 md:-mt-20">
+      <Hero />
     </div>
   )
 }

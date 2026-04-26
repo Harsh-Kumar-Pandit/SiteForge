@@ -10,19 +10,15 @@
   border-bottom: 1px solid #e8f4f4;
   position: sticky;
   top: 0;
-  z-index: 50;
-  width: 100%;
-  min-width: 100%;
+  z-index: 0;
   box-sizing: border-box;
-
-  /* Subtle top teal accent line */
   border-top: 2.5px solid #38bdf8;
+  flex-shrink: 0;
 }
 
 .sf-header-left {
   display: flex;
   align-items: center;
-  flex: 1;
 }
 
 .sf-header-right {

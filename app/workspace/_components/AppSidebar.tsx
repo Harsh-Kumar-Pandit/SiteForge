@@ -95,7 +95,7 @@ export function AppSidebar() {
       </SidebarHeader>
 
       {/* ── Projects ── */}
-      <SidebarContent>
+      <SidebarContent className="overflow-hidden">
         <p className="sf-section-label">Projects</p>
 
         <div className="sf-project-list">
