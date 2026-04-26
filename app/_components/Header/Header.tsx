@@ -15,10 +15,8 @@ const MenuOptions = [
 export default function Header() {
   const [scrolled,  setScrolled]  = useState(false);
   const [menuOpen,  setMenuOpen]  = useState(false);
-  const [mounted,   setMounted]   = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     const handler = () => setScrolled(window.scrollY > 16);
     window.addEventListener('scroll', handler, { passive: true });
     return () => window.removeEventListener('scroll', handler);
@@ -42,7 +40,7 @@ export default function Header() {
         <div className="hdr-overlay" onClick={() => setMenuOpen(false)} aria-hidden="true" />
       )}
 
-      <header className={`hdr-wrap${scrolled ? ' hdr-wrap--scrolled' : ''}${mounted ? ' hdr-wrap--mounted' : ''}`}>
+      <header className={`hdr-wrap${scrolled ? ' hdr-wrap--scrolled' : ''}`}>
         <div className="hdr-inner">
 
           {/* ── Logo ── */}
