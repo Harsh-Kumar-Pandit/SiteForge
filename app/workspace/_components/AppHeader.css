@@ -1,0 +1,60 @@
+/* AppHeader.css — SiteForge Navbar */
+
+.sf-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 52px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+
+  /* Subtle top teal accent line */
+  border-top: 2.5px solid #38bdf8;
+}
+
+.sf-header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.sf-header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Sidebar Trigger Button ── */
+.sf-sidebar-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  padding: 0;
+}
+
+.sf-sidebar-trigger:hover {
+  background: #f0fafa;
+  color: #38bdf8;
+}
+
+/* shadcn renders an <svg> inside — target it */
+.sf-sidebar-trigger svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+}
