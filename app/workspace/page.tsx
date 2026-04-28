@@ -3,7 +3,7 @@ import Hero from '../_components/Hero/Hero'
 
 const page = () => {
   return (
-    <div className="-mt-12 md:-mt-20">
+    <div>
       <Hero />
     </div>
   )

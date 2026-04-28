@@ -45,8 +45,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Push below fixed header */
-  padding-top: 66px;
 }
 
 /* ════════════════════════════════════════

@@ -1,18 +1,18 @@
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import React from "react";
 import { AppSidebar } from "./_components/AppSidebar";
 import { AppHeader } from "./_components/AppHeader";
 
 function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <SidebarProvider>
+    <SidebarProvider className="h-screen">
       <AppSidebar />
-      <SidebarInset>
+      <div className="flex flex-col flex-1 w-full h-screen">
         <AppHeader />
         <div className="flex-1 w-full overflow-y-auto overflow-x-hidden">
           {children}
         </div>
-      </SidebarInset>
+      </div>
     </SidebarProvider>
   );
 }
