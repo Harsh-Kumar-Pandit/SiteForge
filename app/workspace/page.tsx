@@ -4,7 +4,7 @@ import Hero from '../_components/Hero/Hero'
 const page = () => {
   return (
     <div>
-      <Hero />
+      <Hero variant="workspace" />
     </div>
   )
 }

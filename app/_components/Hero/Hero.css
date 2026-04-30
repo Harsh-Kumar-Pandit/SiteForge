@@ -47,6 +47,14 @@
   align-items: center;
 }
 
+.hero-page--home {
+  padding-top: 88px;
+}
+
+.hero-page--workspace {
+  padding-top: 24px;
+}
+
 /* ════════════════════════════════════════
    CANVAS BACKGROUND
 ════════════════════════════════════════ */
@@ -430,7 +438,8 @@
    RESPONSIVE
 ════════════════════════════════════════ */
 @media (max-width: 640px) {
-  .hero-page    { padding-top: 60px; }
+  .hero-page--home { padding-top: 76px; }
+  .hero-page--workspace { padding-top: 16px; }
   .hero-section { padding: 24px 1.25rem 64px; }
   .hero-h1      { font-size: 2.5rem; }
   .hero-sub     { font-size: 0.95rem; }

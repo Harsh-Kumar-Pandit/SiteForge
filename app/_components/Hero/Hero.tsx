@@ -85,7 +85,11 @@ const ORBS = [
   },
 ];
 
-export default function Hero() {
+type HeroProps = {
+  variant?: "home" | "workspace";
+};
+
+export default function Hero({ variant = "home" }: HeroProps) {
   const [prompt, setPrompt] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const [genPulse, setGenPulse] = useState(false);
@@ -227,7 +231,9 @@ export default function Hero() {
     }
   };
   return (
-    <div className={`hero-page${mounted ? " hero-page--mounted" : ""}`}>
+    <div
+      className={`hero-page hero-page--${variant}${mounted ? " hero-page--mounted" : ""}`}
+    >
       <canvas ref={canvasRef} className="hero-canvas" aria-hidden="true" />
 
       <section className="hero-section">
